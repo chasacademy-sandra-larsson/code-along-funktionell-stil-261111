@@ -1,4 +1,4 @@
-// Ett svar som det kunde se ut från ett API. Alla fält finns inte alltid.
+// En beställning, som den kunde se ut från ett API.
 export const order = {
   id: 1042,
   customer: {
@@ -12,9 +12,4 @@ export const order = {
     { name: 'Smörgås', price: 79, category: 'mat' },
   ],
   note: '',
-};
-
-export const guestOrder = {
-  id: 1043,
-  items: [{ name: 'Vatten', price: 15, category: 'dryck' }],
 };

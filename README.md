@@ -1,4 +1,4 @@
-# Modern JavaScript och funktionell stil
+# Funktionell stil i JavaScript
 
 Code-along i fyra delar. I tisdags svarade OOP på frågan **var bor datan, och vem får ändra den?** genom att gömma datan i ett objekt och bara ändra den via metoder. I dag är det den funktionella stilens tur: datan flödar genom funktioner som inte ändrar något, och det tillstånd som ändå behövs göms i en closure.
 
@@ -8,19 +8,11 @@ Code-along i fyra delar. I tisdags svarade OOP på frågan **var bor datan, och 
 
 Varje `js/main.js` har numrerade steg och `TODO`. Gör dem i ordning, och **gissa innan du kör**.
 
-## Del 1: Modern JavaScript
+## Del 1: Uppvärmning
 
-`1-modern-js/`
+`1-uppvarmning/`
 
-1. Destructuring med standardvärde. När används standardvärdet?
-2. Spread och rest.
-3. Optional chaining `?.` när ett fält kanske saknas.
-4. `??` mot `||`. När skiljer de sig?
-5. `??=` sätter ett värde bara om det saknas.
-6. `at(-1)` läser bakifrån.
-7. `Object.entries` och `Object.fromEntries`.
-8. `Object.groupBy`.
-9. `toSorted`, `toReversed` och `with`, arraymetoder som inte muterar.
+Destructuring med standardvärde, spread och rest, från v43. Gissa först.
 
 ## Del 2: Ren eller oren?
 
@@ -54,7 +46,7 @@ Ett kafé har en kassa i `js/kassa-imperativ.js`. Den fungerar, en gång. Kör d
 
 Inga `push`, inga `splice`. Varje ändring skapar en ny array.
 
-**Del C, självstudier.** Visa kvittot på sidan, grupperat per kategori med `Object.groupBy`. Bara `main.js` får röra DOM:en.
+**Del C, självstudier.** Visa kvittot på sidan i stället för i konsolen. Bara `main.js` får röra DOM:en, och texten räknas fram av dina rena funktioner.
 
 **Till torsdagen:** Ta med Kassan och pokern. Lägg dem i varsitt repo på GitHub, med koden i en egen branch, så att en kamrat kan granska den i en pull request. Vi går igenom hur på workshoppen.
 
