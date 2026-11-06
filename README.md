@@ -12,7 +12,7 @@ Varje `js/main.js` har numrerade steg och `TODO`. Gör dem i ordning, och **giss
 
 `1-uppvarmning/`
 
-Destructuring med standardvärde, spread och rest, från v43. Gissa först.
+Gör en ny version i stället för att ändra: kopior med spread, och `map`, `filter` och `reduce` som bygger på samma tanke. Gissa först.
 
 ## Del 2: Ren eller oren?
 
