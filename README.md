@@ -10,7 +10,7 @@ Varje `js/main.js` har numrerade steg och `TODO`. Gör dem i ordning, och **giss
 
 ## Del 1: Uppvärmning
 
-`1-uppvarmning/`
+`1-kopior/`
 
 Gör en ny version i stället för att ändra: kopior med spread, och `map`, `filter` och `reduce` som bygger på samma tanke. Gissa först.
 
