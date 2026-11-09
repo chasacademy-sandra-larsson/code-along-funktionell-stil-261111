@@ -1,6 +1,6 @@
 # Funktionell stil i JavaScript
 
-Code-along i fyra delar. I tisdags svarade OOP på frågan **var bor datan, och vem får ändra den?** genom att gömma datan i ett objekt och bara ändra den via metoder. I dag är det den funktionella stilens tur: datan flödar genom funktioner som inte ändrar något, och det tillstånd som ändå behövs göms i en closure.
+Code-along i tre delar. I tisdags svarade OOP på frågan **var bor datan, och vem får ändra den?** genom att gömma datan i ett objekt och bara ändra den via metoder. I dag är det den funktionella stilens tur: datan flödar genom funktioner som inte ändrar något, och det tillstånd som ändå behövs göms i en closure.
 
 ## Kom igång
 
@@ -29,26 +29,9 @@ Gör en ny version i stället för att ändra: kopior med spread, och `map`, `fi
 3. `createTodoList()` med samma API som tisdagens `class TodoList`, fast med closure i stället för `#`.
 4. Closures ni redan har skrivit: knappar som minns vilken låt de hör till.
 
-## Del 4: Kassan
+## Kassan: eget repo
 
-`4-kassan/`. Övning på passet och självstudier till torsdagen.
-
-Ett kafé har en kassa i `js/kassa-imperativ.js`. Den fungerar, en gång. Kör den två gånger med samma rabattkod och jämför kvittona.
-
-**Del A, på passet (15 min).** Skriv rena funktioner i `js/receipt.js` och använd dem i `js/main.js` i stället för `checkout`. Funktionerna står i `main.js`. Ingen av dem får ändra `products` eller `lines`, läsa globala variabler eller logga. Det enda stället med sidoeffekter är `main.js`.
-
-**Del B, självstudier.** Skriv `createCart(products)` i `js/cart.js`. Varukorgen minns sina rader i en closure och har:
-
-- `add(productId, quantity = 1)`: lägger till en rad, eller ökar antalet om produkten redan finns. Kastar ett fel om produkten inte finns.
-- `remove(productId)`: tar bort raden.
-- `lines()`: returnerar en kopia av raderna.
-- `total()`: summan, med hjälp av dina funktioner från del A.
-
-Inga `push`, inga `splice`. Varje ändring skapar en ny array.
-
-**Del C, självstudier.** Visa kvittot på sidan i stället för i konsolen. Bara `main.js` får röra DOM:en, och texten räknas fram av dina rena funktioner.
-
-**Till torsdagen:** Ta med Kassan och pokern. Lägg dem i varsitt repo på GitHub, med koden i en egen branch, så att en kamrat kan granska den i en pull request. Vi går igenom hur på workshoppen.
+Övningen Kassan ligger i ett eget repo: [js--fp-kassan](https://github.com/chasacademy-sandra-larsson/js--fp-kassan). Del A gör vi på passet, del B och C är självstudier till torsdagens workshop.
 
 ## Begrepp
 
@@ -63,5 +46,5 @@ Inga `push`, inga `splice`. Varje ändring skapar en ny array.
 
 ## Efter passet
 
-- Kassan, del B och C, till torsdagen.
-- Pokern, minst del 1–4, till torsdagen.
+- Kassan ([js--fp-kassan](https://github.com/chasacademy-sandra-larsson/js--fp-kassan)), del B och C, till torsdagen.
+- Pokern ([js--oop-poker](https://github.com/chasacademy-sandra-larsson/js--oop-poker)), minst del 1–4, till torsdagen.
